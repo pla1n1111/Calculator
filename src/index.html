@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Anton Slizhov">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="calculator__display">
+            <div class="calculator__history"></div>
+            <div class="calculator__current">0</div>
+        </div>
+
+        <div class="calculator__keys">
+            <button type="button" class="calculator__key calculator__key--function" data-action="clear">AC</button>
+            <button type="button" class="calculator__key calculator__key--function"
+                data-action="percentage">+/-</button>
+            <button type="button" class="calculator__key calculator__key--function" data-action="percentage">%</button>
+            <button type="button" class="calculator__key calculator__key--operator" data-action="multiply">÷</button>
+
+            <button type="button" class="calculator__key" data-number="7">7</button>
+            <button type="button" class="calculator__key" data-number="8">8</button>
+            <button type="button" class="calculator__key" data-number="9">9</button>
+            <button type="button" class="calculator__key calculator__key--operator" data-action="multiply">×</button>
+
+            <button type="button" class="calculator__key" data-number="4">4</button>
+            <button type="button" class="calculator__key" data-number="5">5</button>
+            <button type="button" class="calculator__key" data-number="6">6</button>
+            <button type="button" class="calculator__key calculator__key--operator" data-action="subtract">−</button>
+
+            <button type="button" class="calculator__key" data-number="1">1</button>
+            <button type="button" class="calculator__key" data-number="2">2</button>
+            <button type="button" class="calculator__key" data-number="3">3</button>
+            <button type="button" class="calculator__key calculator__key--operator" data-action="add">+</button>
+
+            <button type="button" class="calculator__key calculator__key--wide" data-number="0">0</button>
+            <button type="button" class="calculator__key" data-number=".">,</button>
+            <button type="button" class="calculator__key calculator__key--equals" data-action="calculate">=</button>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

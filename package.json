@@ -1,0 +1,43 @@
+{
+    "name": "calculator",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "precommit": "lint-staged",
+        "build": "webpack"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "@babel/core": "^7.28.0",
+        "@babel/preset-env": "^7.28.0",
+        "@eslint/js": "^9.32.0",
+        "babel-loader": "^10.0.0",
+        "css-loader": "^7.1.2",
+        "eslint": "^9.32.0",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.3",
+        "globals": "^16.3.0",
+        "html-webpack-plugin": "^5.6.3",
+        "husky": "^9.1.7",
+        "lint-staged": "^16.1.2",
+        "prettier": "^3.6.2",
+        "sass": "^1.89.2",
+        "sass-loader": "^16.0.5",
+        "style-loader": "^4.0.0",
+        "webpack": "^5.101.0",
+        "webpack-cli": "^6.0.1"
+    },
+    "overrides": {
+        "eslint": "^9.32.0"
+    },
+    "lint-staged": {
+        "*.{js,jsx}": [
+            "node_modules/.bin/eslint",
+            "prettier --write",
+            "git add"
+        ]
+    }
+}
