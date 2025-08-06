@@ -1,0 +1,78 @@
+@use '/src/scss/base/variables.scss' as *;
+
+.calculator {
+    width: 320px;
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+    &__display {
+        background: $display-bg;
+        color: white;
+        padding: 20px;
+        text-align: right;
+        min-height: 71px;
+    }
+
+    &__history {
+        min-height: 20px;
+        font-size: 14px;
+        opacity: 0.7;
+    }
+
+    &__current {
+        font-size: 2.5em;
+        margin-top: 5px;
+    }
+
+    &__keys {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1px;
+        background: #999;
+    }
+
+    &__key {
+        border: none;
+        padding: 20px;
+        font-size: 1.2em;
+        cursor: pointer;
+        background: $key-bg;
+        transition: background 0.2s;
+
+        &:hover {
+            background: adjust-color($key-bg, $lightness: -5%);
+        }
+
+        &-operator {
+            background: $operator-bg;
+            color: white;
+
+            &:hover {
+                background: adjust-color($operator-bg, $lightness: -5%);
+            }
+        }
+
+        &-function {
+            background: #d6d6d6;
+        }
+
+        &-equals {
+            background: $equals-bg;
+            color: white;
+
+            &:hover {
+                background: adjust-color($equals-bg, $lightness: -5%);
+            }
+        }
+    }
+
+    [data-action='changeStyle'] {
+        padding: 10px;
+        font-size: 1em;
+        cursor: pointer;
+        background: $operator-bg;
+        transition: background 0.2s;
+    }
+}

@@ -1,0 +1,21 @@
+@use '/src/scss/base/variables.scss' as *;
+
+.calculator {
+    &__key {
+        &-operator.blue {
+            background: $operator-bg-blue;
+        }
+
+        &-equals.blue {
+            background: $equals-bg-blue;
+        }
+
+        &-operator.pink {
+            background: $operator-bg-pink;
+        }
+
+        &-equals.pink {
+            background: $equals-bg-pink;
+        }
+    }
+}

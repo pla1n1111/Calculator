@@ -39,5 +39,9 @@
             "prettier --write",
             "git add"
         ]
+    },
+    "dependencies": {
+        "core-js": "^3.45.0",
+        "regenerator-runtime": "^0.14.1"
     }
 }

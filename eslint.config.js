@@ -22,7 +22,7 @@ export default defineConfig([
             'no-debugger': 'error',
             'no-alert': 'warn',
 
-            complexity: ['warn', 10],
+            complexity: ['warn', 15],
             'max-depth': ['warn', 4],
             'max-params': ['warn', 4],
             'no-duplicate-imports': 'error',
@@ -32,7 +32,6 @@ export default defineConfig([
             camelcase: ['error', { properties: 'always' }],
             quotes: ['error', 'single', { avoidEscape: true }],
             semi: ['error', 'always'],
-            'arrow-parens': ['error', 'always'],
             'object-curly-spacing': ['error', 'always'],
             'array-bracket-spacing': ['error', 'never'],
 

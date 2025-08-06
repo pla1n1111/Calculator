@@ -6,7 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     mode: 'production',
     entry: './src/js/index.js',
-    devtool: 'source-map',
+    devtool: 'hidden-nosources-cheap-source-map',
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
