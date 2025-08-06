@@ -20,11 +20,20 @@ Files are minified and ready for deployment
 Project Structure
 
 /dist	- Production-ready built files
+
 /src/js -	Calculator logic and main application script, JavaScript
+
 /src/scss - All styles divided into components, using SCSS
+
 /src/scss/base - Variables and mixins
+
 /src/scss/blocks - Component-specific styles
+
 webpack.config.js - Build configuration
+
 eslint.config.js - Code quality rules
+
 .prettierrc - Prettier config file
+
 index.html - The main HTML file
+
