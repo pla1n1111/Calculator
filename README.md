@@ -37,3 +37,4 @@ eslint.config.js - Code quality rules
 
 index.html - The main HTML file
 
+Site deploy: https://quest-love.click/
